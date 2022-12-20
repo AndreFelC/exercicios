@@ -12,13 +12,17 @@ console.log(a % b)*/
 
 //exercicio 2
 
-/*const c = 12;
-const d = 9;
+/*const c = 0;
+const d = 1;
 
 if (c > d) {
     console.log(c + ' é maior')
-} else {
+}
+else if (c < d){
     console.log(d + ' é maior')
+}
+else {
+    console.log('ambos são iguais');
 }*/
 
 //exercicio 3
@@ -33,8 +37,11 @@ if (e > f && e > g){
 else if (f > e && f > g){
     console.log(f + ' é o maior dentre os três')
 }
-else{
+else if (g > e && g > f){
     console.log(g + ' é o maior dentre os três')
+}
+else{
+    console.log('todos são iguais')
 }*/
 
 //exercicio 4
@@ -43,33 +50,39 @@ else{
 
 if (h > 0){
     console.log('positivo')
-} else{
+}
+else if (h < 0){
     console.log('negativo')
+}
+else{
+    console.log('neutro')
 }*/
 
 //exercicio 5
-
-/*const j = 57
+/*
+const j = 57
 const k = 63
 const l = 61
 
-if (j + k + l == 180){
+if (j + k + l === 180){
     console.log('é um triangulo')
 } else{
     console.log('não é um triangulo')
-}*/
+}
+*/
 
 //exercicio 6
 
-/*let xadrez = 'bispo'
+/*let xadrez = 'torre'
 
 switch (xadrez){
-    case 'bispo'
-    console.log('diagonal')
-    break 
-
-    case 'torre'
-    console.log('vertical horizontal')
+    case 'bispo':
+        console.log('diagonal')
+        break 
+ 
+    case 'torre':
+        console.log('vertical horizontal')
+        break
 }*/
 
 //exercicio 7
@@ -77,32 +90,31 @@ switch (xadrez){
 /*const nota = 99
 
 if (nota < 100 && nota > 90){
-console.log('A')
+    console.log('A')
 }
 else if (nota < 89 && nota > 80){
-console.log('B')
+    console.log('B')
 }
 else if (nota < 79 && nota > 70){
-console.log('C')
+    console.log('C')
 }
 else if (nota < 69 && nota > 60){
-console.log('D')
+    console.log('D')
 }
 else if (nota < 59 && nota > 50){
-console.log('E')
-}
-else{
-console.log('F')
+    console.log('E')
+} else{
+    console.log('F')
 }*/
 
 //exercicio 8
 
 /*const n = 2
 const total = n%2
-if (n%2 == 0){
+if (total === 0){
 console.log('par')
 }
-else if(n%2 == 1){
+else if(total === 1){
     console.log('impar')
 }*/
 
@@ -111,20 +123,66 @@ else if(n%2 == 1){
 /*const custo = 100
 const venda = 150
 
-if (custo + 20) {
-    console.log('120')
-}
-if ((venda - 120)* 1000){
-    console.log(30000)
-}*/
 
+if (custo < 0 || venda < 0){
+    console.log('erro');
+} 
+else{
+    const imposto = custo * 0.2
+    const custoTotal = custo + imposto
+    const lucro = venda - custoTotal
+    console.log(1000 * lucro)
+}*/
 //exercicio 10
 
-/*const salario = 4000
-
-if(4000 - 440){
-    console.log(3560)
+const salario = 4000
+let inss
+let salarioSInss
+if (salario <= 1556.93){
+    inss = 0.08
+    const impostoInss = salario * inss
+    const salarioSInss = salario - impostoInss
+    console.log(salarioSInss)
 }
-if(3560 - 534){
-    console.log(3026)
-}*/
+else if (salario >= 1556.94 && salario <= 2594.92){
+    inss = 0.09
+    const impostoInss = salario * inss
+    const salarioSInss = salario - impostoInss
+}
+else if (salario > 2594.92 && salario <= 5189.82){
+    inss = 0.11
+    const impostoInss = salario * inss
+    const salarioSInss = salario - impostoInss
+}
+else if (salario > 5189.82){
+    inss = 570.88
+    const salarioSInss = salario - inss
+}
+
+let ir
+let salarioLiquido
+if (salarioSInss <= 1903.97){
+}
+else if(salarioSInss >= 1903.98 && salarioSInss <= 2826.65){
+    ir = 0.075
+    const impostoDoIr = salarioSInss * ir
+    const salarioLiquido = salarioSInss - impostoDoIr
+    console.log(salarioLiquido)
+}
+else if(salarioSInss > 2826.65 && salarioSInss <= 3751.05){
+    ir = 0.15
+    const impostoDoIr = salarioSInss * ir
+    const salarioLiquido = salarioSInss - impostoDoIr
+    console.log(salarioLiquido)
+}
+else if(salarioSInss > 3751.05 && salarioSInss <= 4664.68){
+    ir = 0.225
+    const impostoDoIr = salarioSInss * ir
+    const salarioLiquido = salarioSInss - impostoDoIr
+    console.log(salarioLiquido)
+}
+else if(salarioSInss <= 4664.68){
+    ir = 0.275
+    const salarioLiquido = salarioSInss - ir
+    console.log(salarioLiquido)
+}
