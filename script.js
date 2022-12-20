@@ -97,4 +97,34 @@ console.log('F')
 
 //exercicio 8
 
+/*const n = 2
+const total = n%2
+if (n%2 == 0){
+console.log('par')
+}
+else if(n%2 == 1){
+    console.log('impar')
+}*/
 
+//exercicio 9
+
+/*const custo = 100
+const venda = 150
+
+if (custo + 20) {
+    console.log('120')
+}
+if ((venda - 120)* 1000){
+    console.log(30000)
+}*/
+
+//exercicio 10
+
+/*const salario = 4000
+
+if(4000 - 440){
+    console.log(3560)
+}
+if(3560 - 534){
+    console.log(3026)
+}*/
