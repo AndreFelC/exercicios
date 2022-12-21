@@ -135,54 +135,37 @@ else{
 }*/
 //exercicio 10
 
-const salario = 4000
-let inss
+const salario = 3000
 let salarioSInss
 if (salario <= 1556.93){
-    inss = 0.08
-    const impostoInss = salario * inss
-    const salarioSInss = salario - impostoInss
-    console.log(salarioSInss)
+    salarioSInss = salario - 0.08 * salario
 }
 else if (salario >= 1556.94 && salario <= 2594.92){
-    inss = 0.09
-    const impostoInss = salario * inss
-    const salarioSInss = salario - impostoInss
+    salarioSInss = salario - 0.09 * salario
 }
 else if (salario > 2594.92 && salario <= 5189.82){
-    inss = 0.11
-    const impostoInss = salario * inss
-    const salarioSInss = salario - impostoInss
+    salarioSInss = salario - 0.11 * salario
 }
 else if (salario > 5189.82){
-    inss = 570.88
-    const salarioSInss = salario - inss
+    salarioSInss = salario - 570.88
 }
 
 let ir
 let salarioLiquido
+
 if (salarioSInss <= 1903.97){
+    salarioLiquido = salarioSInss
 }
 else if(salarioSInss >= 1903.98 && salarioSInss <= 2826.65){
-    ir = 0.075
-    const impostoDoIr = salarioSInss * ir
-    const salarioLiquido = salarioSInss - impostoDoIr
-    console.log(salarioLiquido)
+    salarioLiquido = salarioSInss - salarioSInss * 0.075
 }
 else if(salarioSInss > 2826.65 && salarioSInss <= 3751.05){
-    ir = 0.15
-    const impostoDoIr = salarioSInss * ir
-    const salarioLiquido = salarioSInss - impostoDoIr
-    console.log(salarioLiquido)
+    salarioLiquido = salarioSInss - salarioSInss * 0.15
 }
 else if(salarioSInss > 3751.05 && salarioSInss <= 4664.68){
-    ir = 0.225
-    const impostoDoIr = salarioSInss * ir
-    const salarioLiquido = salarioSInss - impostoDoIr
-    console.log(salarioLiquido)
+    salarioLiquido = salarioSInss - salarioSInss * 0.225
 }
 else if(salarioSInss <= 4664.68){
-    ir = 0.275
-    const salarioLiquido = salarioSInss - ir
-    console.log(salarioLiquido)
+    salarioLiquido = salarioSInss - salarioSInss * 0.275
 }
+console.log(salarioLiquido)
