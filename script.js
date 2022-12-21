@@ -135,37 +135,34 @@ else{
 }*/
 //exercicio 10
 
-const salario = 3000
-let salarioSInss
-if (salario <= 1556.93){
-    salarioSInss = salario - 0.08 * salario
-}
-else if (salario >= 1556.94 && salario <= 2594.92){
-    salarioSInss = salario - 0.09 * salario
-}
-else if (salario > 2594.92 && salario <= 5189.82){
-    salarioSInss = salario - 0.11 * salario
-}
-else if (salario > 5189.82){
-    salarioSInss = salario - 570.88
-}
-
-let ir
+const salario = 4000
 let salarioLiquido
 
-if (salarioSInss <= 1903.97){
-    salarioLiquido = salarioSInss
+if (salario <= 1556.93){
+    salarioLiquido = salario - 0.08 * salario
 }
-else if(salarioSInss >= 1903.98 && salarioSInss <= 2826.65){
-    salarioLiquido = salarioSInss - salarioSInss * 0.075
+else if (salario <= 2594.92){
+    salarioLiquido = salario - 0.09 * salario
 }
-else if(salarioSInss > 2826.65 && salarioSInss <= 3751.05){
-    salarioLiquido = salarioSInss - salarioSInss * 0.15
+else if (salario <= 5189.82){
+    salarioLiquido = salario - 0.11 * salario
 }
-else if(salarioSInss > 3751.05 && salarioSInss <= 4664.68){
-    salarioLiquido = salarioSInss - salarioSInss * 0.225
+else{
+    salarioLiquido = salario - 570.88
 }
-else if(salarioSInss <= 4664.68){
-    salarioLiquido = salarioSInss - salarioSInss * 0.275
+
+if (salarioLiquido <= 1903.97){
+}
+else if(salarioLiquido <= 2826.65){
+    salarioLiquido = salarioLiquido - salarioLiquido * 0.075
+}
+else if(salarioLiquido <= 3751.05){
+    salarioLiquido = salarioLiquido - salarioLiquido * 0.15
+}
+else if(salarioLiquido <= 4664.68){
+    salarioLiquido = salarioLiquido - salarioLiquido * 0.225
+}
+else{
+    salarioLiquido = salarioLiquido - salarioLiquido * 0.275
 }
 console.log(salarioLiquido)
