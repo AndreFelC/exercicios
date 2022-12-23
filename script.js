@@ -135,7 +135,7 @@ else{
 }*/
 //exercicio 10
 
-const salario = 4000
+/*const salario = 4000
 let salarioLiquido
 
 if (salario <= 1556.93){
@@ -149,9 +149,9 @@ else if (salario <= 5189.82){
 }
 else{
     salarioLiquido = salario - 570.88
-}
+}*/
 
-if (salarioLiquido <= 1903.97){
+/*if (salarioLiquido <= 1903.97){
 }
 else if(salarioLiquido <= 2826.65){
     salarioLiquido -= salarioLiquido * 0.075
@@ -165,4 +165,59 @@ else if(salarioLiquido <= 4664.68){
 else{
     salarioLiquido -= salarioLiquido * 0.275
 }
-console.log(salarioLiquido)
+console.log(salarioLiquido)*/
+
+//sessão 4, aula 2
+
+//exercicio 1
+
+//let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+//let soma = 0
+//console.log(numbers)
+
+//for(let index = 0; index < numbers.length; index += 1){
+//    soma += numbers[index]
+//}
+// console.log(soma)
+
+// console.log(soma / numbers.length)
+
+// if (soma > 20){
+//     console.log('esse valor é maior que 20')
+// }
+// else {
+//     console.log('esse valor é menor ou igual à 20')
+// }
+// let maiorNumero = 0
+
+// for(index = 0; index < numbers.length; index += 1){
+//     if (maiorNumero < numbers[index]){
+//         maiorNumero = numbers[index]
+//     }
+// }
+// console.log(maiorNumero)
+
+// for(let index = 0; index < numbers.length; index += 1){
+//     let total = numbers[index] % 2
+//     if (total === 0){
+//         console.log('par')
+//     }
+//     else{
+//         console.log('impar')
+//     }
+// }
+
+// let menorNumero = 1000
+// for(let index = 0; index < numbers.length; index += 1){
+//     if (menorNumero > numbers[index]){
+//         menorNumero = numbers[index]
+//     }
+// }
+// console.log(menorNumero)
+
+/*let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+console.log(number)
+
+for (let index = 0; index < number.length; index += 1){
+    console.log(number[index] / 2)
+}*/
