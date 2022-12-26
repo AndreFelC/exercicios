@@ -221,3 +221,20 @@ console.log(number)
 for (let index = 0; index < number.length; index += 1){
     console.log(number[index] / 2)
 }*/
+
+//sessão 4, dia 3
+
+//exercicio 1
+
+/*let number = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+let valor = 1
+for(let index = 0; index < number.length; index += 1){ 
+valor *= number[index]
+}
+console.log(valor)*/
+
+//exercicio 2
+
+let teste = "tryber";
+let invertida = teste.split("").reverse().join("");
+console.log(invertida);
