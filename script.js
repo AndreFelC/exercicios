@@ -226,15 +226,14 @@ for (let index = 0; index < number.length; index += 1){
 
 //exercicio 1
 
-/*let number = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-let valor = 1
-for(let index = 0; index < number.length; index += 1){ 
-valor *= number[index]
+/*let valor = 1
+for(let number = 10; number > 0; number -= 1){ 
+    valor *= number
 }
 console.log(valor)*/
 
-//exercicio 2
-
-let teste = "tryber";
-let invertida = teste.split("").reverse().join("");
-console.log(invertida);
+let word = 'triber'
+for(let index = 5; index >= 0; index -= 1){  
+    console.log(word[index])
+}
+let 
