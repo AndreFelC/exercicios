@@ -231,9 +231,9 @@ for(let number = 10; number > 0; number -= 1){
     valor *= number
 }
 console.log(valor)*/
-
+/*let palavra = ''
 let word = 'triber'
 for(let index = 5; index >= 0; index -= 1){  
-    console.log(word[index])
+    palavra += word[index]
 }
-let 
+console.log(palavra)*/
