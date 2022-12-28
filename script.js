@@ -237,3 +237,13 @@ for(let index = 5; index >= 0; index -= 1){
     palavra += word[index]
 }
 console.log(palavra)*/
+
+//exercicio 2
+
+const array = ['java', 'javascript', 'python', 'html', 'css'];
+let maior = ''
+for(let index = 0; index <= array.length; index += 1){
+    const a = array[index].length
+    let maiorNumero = a > maior.length
+}
+console.log(maior)
