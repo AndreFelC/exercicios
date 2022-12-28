@@ -242,8 +242,9 @@ console.log(palavra)*/
 
 const array = ['java', 'javascript', 'python', 'html', 'css'];
 let maior = ''
-for(let index = 0; index <= array.length; index += 1){
-    const a = array[index].length
-    let maiorNumero = a > maior.length
+for(let index = 0; index < array.length; index += 1){
+    const a = array[index]
+    const ab = a.length
+    maior = ab > maior.length
 }
 console.log(maior)
